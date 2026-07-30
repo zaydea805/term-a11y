@@ -1,0 +1,38 @@
+{
+  "name": "term-a11y",
+  "version": "0.1.0",
+  "description": "Accessible-by-default spinners, progress bars, and tables for CLI tools, plus a linter that catches screen-reader-breaking output patterns before you ship.",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "bin": {
+    "term-a11y-lint": "bin/lint.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "lint:self": "node bin/lint.js examples/inaccessible-cli.js"
+  },
+  "keywords": [
+    "cli",
+    "accessibility",
+    "a11y",
+    "screen-reader",
+    "terminal",
+    "tui",
+    "nvda",
+    "jaws",
+    "voiceover",
+    "spinner",
+    "progress-bar",
+    "linter"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
