@@ -19,7 +19,7 @@ const { isScreenReaderMode } = require("./detect");
  * terminal, font, and locale, and it's one less thing to special-case.
  *
  * A missing field renders as a blank cell in the grid (an empty box reads
- * unambiguously to a sighted user) but as the words "(not set)" in
+ * better for users using the grid) but as the words "(not set)" in
  * accessible mode — a blank spoken value trailing into silence reads as
  * broken output rather than "this field intentionally has no value."
  */
